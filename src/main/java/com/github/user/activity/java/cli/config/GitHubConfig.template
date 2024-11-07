@@ -1,0 +1,21 @@
+package com.github.user.activity.java.cli.config;
+
+/**
+ * Template for GitHub configuration.
+ * To use:
+ * 1. Change the class name to GitHubConfig.java instead of GitHubConfig.template
+ * 2. Replace "your_github_token_here" with your actual GitHub token
+ * 3. Do not commit GitHubConfig.java to version control
+ */
+public class GitHubConfig {
+    public static final String API_BASE_URL = "https://api.github.com";
+    public static final String API_VERSION = "2022-11-28";
+    public static final String USER_AGENT = "GitHub-User-Activity-CLI";
+    
+    /**
+     * Your GitHub Personal Access Token
+     * Generate one at: https://github.com/settings/tokens
+     * Required scopes: none (for public repositories)
+     */
+    public static final String GITHUB_TOKEN = "your_github_token_here";
+} 

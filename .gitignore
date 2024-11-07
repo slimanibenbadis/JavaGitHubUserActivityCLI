@@ -39,4 +39,7 @@ replay_pid*
 
 # OS specific files
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Configuration files with sensitive data
+src/main/java/com/github/user/activity/java/cli/config/GitHubConfig.java
