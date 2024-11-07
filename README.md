@@ -25,10 +25,8 @@ cd github_user_activity_java_cli
 ```
 
 2. Configure GitHub token:
-   - Copy the template configuration file:
-   ```bash
-   cp src/main/java/com/github/user/activity/java/cli/config/GitHubConfig.template.java src/main/java/com/github/user/activity/java/cli/config/GitHubConfig.java
-   ```
+   - Rename `GitHubConfig.template` to `GitHubConfig.java`
+
    - Edit `GitHubConfig.java` and replace `your_github_token_here` with your GitHub Personal Access Token
 
 3. Build the project:
