@@ -25,9 +25,13 @@ public class GitHubApiClient {
         this.authToken = authToken;
     }
 
+    protected String getBaseUrl() {
+        return GitHubConfig.API_BASE_URL;
+    }
+
     public List<Event> getUserPublicEvents(String username, int page) throws GitHubApiException {
         String url = String.format("%s/users/%s/events/public?page=%d", 
-            GitHubConfig.API_BASE_URL, username, page);
+            getBaseUrl(), username, page);
 
         Request.Builder requestBuilder = new Request.Builder()
             .url(url)

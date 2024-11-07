@@ -10,7 +10,11 @@ public class GitHubActivityService {
     private final GitHubApiClient apiClient;
 
     public GitHubActivityService(String authToken) {
-        this.apiClient = new GitHubApiClient(authToken);
+        this.apiClient = createApiClient(authToken);
+    }
+
+    protected GitHubApiClient createApiClient(String token) {
+        return new GitHubApiClient(token);
     }
 
     public List<Event> getUserRecentActivity(String username) throws GitHubApiException {

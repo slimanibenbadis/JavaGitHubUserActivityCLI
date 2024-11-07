@@ -53,7 +53,7 @@ public class GitHubActivityCLI {
         }
     }
 
-    private static void printEvent(Event event) {
+    protected static void printEvent(Event event) {
         String timestamp = formatter.format(Instant.parse(event.getCreatedAt()));
         
         System.out.printf("Time: %s%n", timestamp);
